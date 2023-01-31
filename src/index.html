@@ -273,7 +273,7 @@
         <div class="title title_fz16 promo__subtitle">
           Меня зовут Ксения Капурина
         </div>
-        <h1 class="title promo__title title_fz48">
+        <h1 class="title title_fz48 promo__title">
           Я web-разработчик
           <br />
           из города Москва
@@ -288,7 +288,13 @@
       <div class="container">
         <div class="about-me__wrapper">
           <div class="about-me__photo">
-            <img src="img/me.jpg" alt="my photo" />
+            <img
+              srcset="img/me-min.jpg 300w, img/me.jpg 400w"
+              sizes="(max-width: 576px) 280px,
+              (min-width: 577px) 400px"
+              src="img/me.jpg"
+              alt="my photo"
+            />
           </div>
           <div class="about-me_descr">
             <h2 class="title title_fz16 about-me__title">Про меня</h2>
@@ -356,8 +362,8 @@
     </section>
     <section class="resume">
       <div class="container">
-        <h2 class="resume__title title title_fz16">Опыт</h2>
-        <div class="resume__subtitle title title_fz36">Чем я буду полезна</div>
+        <h2 class="title title_fz16 title_main">Опыт</h2>
+        <div class="title title_fz36 subtitle_main">Чем я буду полезна</div>
         <div class="divider"></div>
         <div class="resume__wrapper">
           <div class="resume__column">
@@ -471,8 +477,8 @@
     </section>
     <section class="skills">
       <div class="container">
-        <h2 class="resume__title title title_fz16">Навыки</h2>
-        <div class="resume__subtitle title title_fz36">
+        <h2 class="title title_fz16 title_main">Навыки</h2>
+        <div class="title title_fz36 subtitle_main">
           Что я использую в работе
         </div>
         <div class="divider"></div>
@@ -627,18 +633,18 @@
         </div>
       </div>
     </section>
-    <section class="portfolio">
+    <!-- <section class="portfolio">
       <div class="container">
-        <h2 class="resume__title title title_fz16">Портфолио</h2>
-        <div class="resume__subtitle title title_fz36">
+        <h2 class="title title_fz16 title_main">Портфолио</h2>
+        <div class="title title_fz36 subtitle_main">
           Мои работы
         </div>
         <div class="divider"></div>
         <div class="portfolio__wrapper">
-          <a href="#" class="portfolio__item">
+          <a href="uber/" class="portfolio__item">
             <img src="img/works/uber.jpg" alt="uber" />
           </a>
-          <a href="#" class="portfolio__item">
+          <a href="pulse/" class="portfolio__item">
             <img src="img/works/pulse.jpg" alt="pulse" />
           </a>
           <a href="#" class="portfolio__item">
@@ -656,6 +662,125 @@
         </div>
       </div>
     </section>
+    <section class="price">
+      <div class="container">
+        <h2 class="title title_fz16 title_main">Прайс-лист</h2>
+        <div class="divider"></div>
+        <div class="price__wrapper">
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Landing-page
+            </h3>
+            <div class="title title_fz14 price__count">от 8000 руб.</div>
+            <div class="price__descr">
+              Одностраничный сайт для презентации услуг/товаров/...
+            </div>
+          </div>
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Web-приложение
+            </h3>
+            <div class="title title_fz14 price__count">от 28000 руб.</div>
+            <div class="price__descr">
+              Приложение внутри браузера для лучшего комфорта
+            </div>
+          </div>
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Корпоративный сайт
+            </h3>
+            <div class="title title_fz14 price__count">от 20000 руб.</div>
+            <div class="price__descr">Сайт для вашего бизнеса или компании</div>
+          </div>
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Android/IOS Приложение
+            </h3>
+            <div class="title title_fz14 price__count">от 25000 руб.</div>
+            <div class="price__descr">
+              Приложение для смартфона любой ОС
+            </div>
+          </div>
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Интернет-магазин
+            </h3>
+            <div class="title title_fz14 price__count">от 30000 руб.</div>
+            <div class="price__descr">
+              Инструмент для ваших продаж в сети
+            </div>
+          </div>
+          <div class="price__item">
+            <h3 class="title title_fz14 price__title">
+              Дизайн
+            </h3>
+            <div class="title title_fz14 price__count">Индивидуально</div>
+            <div class="price__descr">
+              Создам дизайн для вашего сайта/приложения...
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="container">
+        <div class="contacts__wrapper">
+          <div class="contacts__photo">
+            <img src="img/me.jpg" alt="my_photo" />
+          </div>
+          <div class="contacts__descr">
+            <h2 class="title title_fz16 contacts__title">Контакты</h2>
+            <div class="title title_fz36 contacts__subtitle">
+              Свяжитесь со мной
+            </div>
+            <div class="divider contacts__divider"></div>
+            <div class="contacts__text title title_fz14">
+              Любым удобным для вас способом:
+            </div>
+            <div class="contacts__social">
+              <a href="#" class="contacts__link">
+                <img src="icons/social/Facebook.svg" alt="facebook" />
+              </a>
+              <a href="#" class="contacts__link">
+                <img src="icons/social/Telegram.svg" alt="telegram" />
+              </a>
+              <a href="#" class="contacts__link">
+                <img src="icons/social/Instagram (1).svg" alt="instagram" />
+              </a>
+            </div>
+            <div class="contacts__text title title_fz14">
+              Или оставьте ваши данные и я сама вам напишу:
+            </div>
+            <form action="#" class="contacts__form">
+              <div class="contacts__input">
+                <input required name="name" id="name" type="text" />
+                <label for="name">Ваше имя</label>
+              </div>
+              <div class="contacts__input">
+                <input required name="email" id="email" type="email" />
+                <label for="email">Ваша почта</label>
+              </div>
+              <div class="contacts__textarea">
+                <textarea name="text" id="text"></textarea>
+                <label for="text">Ваше сообщение</label>
+              </div>
+              <div class="contacts__triggers">
+                <button class="button contacts__btn">
+                  Отправить сообщение
+                </button>
+                <div class="contacts__policy">
+                  <input required type="checkbox" />
+                  <span>
+                    Я согласен(а)
+                    <a href="/policy.html">с политикой конфиденциальности</a>
+                  </span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section> -->
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js"></script>
