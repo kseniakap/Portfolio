@@ -1,6 +1,7 @@
 .sidepanel {
   position: fixed;
-  top: 230px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 50px;
   height: 340px;
   display: flex;
@@ -8,16 +9,22 @@
   justify-content: space-between;
   align-items: center;
   z-index: 2;
+  img {
+    width: 30px;
+    height: 30px;
+  }
   &_active {
-    #color {
-      fill:black;
-    }
-    .sidepanel{
-      &__divider{
-        background-color:#000000;
+    .sidepanel__link {
+      svg path {
+        fill: black;
       }
-      &__text{
-        color:black;
+    }
+    .sidepanel {
+      &__divider {
+        background-color: #000000;
+      }
+      &__text {
+        color: black;
       }
     }
   }
